@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+:root{
+    --pcolor:rgb(59, 136, 59);
+}
+html{
+    font-size:20px ;
+}
+.fpage{
+    width: 100%;
+    height: 115vh;
+    background-image: url('images/banner.png');
+    background-position: 50% -0% ;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+div.left{
+    float: left;
+    padding: 2.5% 0 0 13.5%;
+    /* display: inline-block; */
+    width: 45%;
+}
+div.right{
+    float: right;
+    clear: both;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+}
+ .left div:nth-child(2){
+    font-size: 3.5rem;
+    margin-top: 5%;
+color: var(--pcolor);
+}
+.left div:nth-child(3){
+    font-size: 3rem;
+    margin-top: 5%;
+color: black;
+}
+.left div:nth-child(4){
+    font-size: 1rem;
+    margin-top: 10%;
+color: black;
+text-align: left;
+}
+.left div:nth-child(5){
+    font-size: 1rem;
+    margin-top: 10%;
+    /* border: 1px solid black; */
+color: white;
+background:black;
+display: inline-block;
+padding: 10px 25px;
+transition:background .5s;
+
+}
+.left div:nth-child(5):hover{
+    background: var(--pcolor);
+}
+.spage{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 2% 15%;
+    margin-top: 5%;
+    /* align-content: space-around; */
+}
+.spage div div:nth-child(1){
+    border: 4px solid var(--pcolor);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 30px;
+    transition: background 1s;
+}
+.spage div div:nth-child(1):hover{
+    background: black;
+}
+.spage div div{
+    margin: 0 7%;
+}
+.spage div div img{
+    /* padding: 1% 3%; */
+    width:70px;
+    
+    height:70px;
+}
+.spage div{
+    text-align: center;
+}
+.spage div div:nth-child(2){
+    margin-top: 5%;
+    font-size: 2rem;
+
+}
+.spage div div:nth-child(3){
+    margin-top: 5%;
+
+}
+
+
+
+/* third page started========= */
+.tpage{
+    text-align: center;
+    margin-top: 5%;
+    background: rgb(210, 229, 236);
+    padding: 5% 15%;
+}
+.tpage p{
+    color: var(--pcolor);
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.tpage > div {
+    display: flex;
+    /* padding: 0 15%; */
+    margin-top: 5%;
+}
+.tpage > div div:nth-child(2) div:nth-child(1){
+    font-size: 1.5rem;
+    color: black;
+}
+.tpage > div div:nth-child(2) div:nth-child(2){
+    font-size: 1rem;
+   margin-top: 10%;
+   padding: 0;
+}
+.tpage > div div:nth-child(2) div:nth-child(3){
+    font-size: .9rem;
+   margin-top: 10%;
+   border: 1px solid var(--pcolor);
+   display: inline-block;
+   padding:10px 25px;
+   transition: background .5s;
+}
+.tpage > div div:nth-child(2) div:nth-child(3):hover{
+    background: var(--pcolor);
+}
+.tpage > div div:nth-child(1){
+    margin-right:5%;
+  
+}
+.tpage > div div:nth-child(2){
+    text-align: left;
+}
+
+.fopage{
+    padding: 5% 10%;
+    text-align: center;
+}
+.bx p:nth-child(1){
+    font-size: 2.5rem;
+    color: var(--pcolor);
+    font-weight: 900;
+}
+.bx p:nth-child(2){
+    font-size: 1rem;
+    /* color: var(--pcolor); */
+    font-weight: 550;
+    margin-top:2%;
+    margin-bottom: 5%;
+    padding:0 20%;
+}
+.bx1{
+    display: flex;
+}
+.bx1 > div{
+    background: var(--pcolor);
+    padding: 2% 4%;
+    margin:0 1%;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0,1);
+}
+.bx1 > div > span{
+    width:50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    background: grey;
+    transition: background .5s ease;
+}
+.bx1 > div > span:hover{
+    background: black;
+}
+.fopage span:hover{
+    background: var(--pcolor);
+}
+.bx1 > div > h3{
+    font-size:  1.5rem;
+    margin:4% 0;
+}
+.bx1 > div > p{
+    font-size:  .9rem;
+}
+.fopage span{
+    width:30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    background: grey;
+    margin:1%;
+    transition: background .5s ease;
+
+    margin-top: 10%;
+
+}
+/* fifth started ================== */
+.fifth{
+    display: flex;
+    background-image: url('images/contact_bg.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    height: 94vh;
+    background-position: cover;
+    padding: 5% 10%;
+    /* justify-content: space-around; */
+}
+.fifth > div {
+    width: 40%;
+    padding:2%;
+}
+.fifth .fbx1 div:nth-child(1){
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+.fifth .fbx1 div:nth-child(2){
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    margin:30% 0 10% 0;
+}
+.fifth .fbx1 div:nth-child(3){
+    border:1px solid var(--pcolor);
+    display: inline-block;
+    padding: 10px 40px;
+    background: white;
+    color: var(--pcolor);
+transition: color,background .5s ease;
+}
+.fifth .fbx1 div:nth-child(3):hover{
+    color: white;
+    background: var(--pcolor);
+}
+.fbx2{
+    background: white;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+    width: 40%;
+    height: 70vh;
+   
+}
+.fbx2 input , textarea{
+    width: 400px;
+    overflow: hidden;
+    height: 40px;
+    border:none;padding: 20px 0;
+    display: inline-block;
+    color: var(--pcolor);
+}
+::placeholder{
+    color: rgb(184, 184, 184);
+}
+.fbx2 input{
+    margin-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+.fbx2 textarea{
+    margin: 5% 0;
+    border-bottom:1px solid black ;
+    padding: 20px 0;
+    height: 50px;
+
+}
+::selection{
+    color: none;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.fbx2 button{
+    width: 200px;
+    padding: 15px 30px;
+    text-align: center;
+    margin-top:5%;
+    background: black;
+    color: whitesmoke;
+    border: none;
+    transition: background 1s ease;
+}
+.fbx2 button:hover{
+    background: var(--pcolor);
+}
+.fotter{
+    text-align: center;
+    vertical-align: middle;
+    height: 6vh;
+    font-weight: 550;
+    /* transform: translate(0,-200%); */
+}
